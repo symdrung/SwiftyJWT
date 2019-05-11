@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544F90BF2286E8E4005BB3DC /* SwiftyCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F90BE2286E8E4005BB3DC /* SwiftyCrypto.framework */; };
 		B759B293200F351700DDFB10 /* SwiftyJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B759B289200F351700DDFB10 /* SwiftyJWT.framework */; };
 		B759B29A200F351700DDFB10 /* SwiftyJWT.h in Headers */ = {isa = PBXBuildFile; fileRef = B759B28C200F351700DDFB10 /* SwiftyJWT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B759B2A5200F35A600DDFB10 /* Base64Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2A4200F35A600DDFB10 /* Base64Utils.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		544F90BE2286E8E4005BB3DC /* SwiftyCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyCrypto.framework; path = Carthage/Build/iOS/SwiftyCrypto.framework; sourceTree = "<group>"; };
 		B759B289200F351700DDFB10 /* SwiftyJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B759B28C200F351700DDFB10 /* SwiftyJWT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJWT.h; sourceTree = "<group>"; };
 		B759B292200F351700DDFB10 /* SwiftyJWTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyJWTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544F90BF2286E8E4005BB3DC /* SwiftyCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +151,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		544F90BD2286E8CD005BB3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544F90BE2286E8E4005BB3DC /* SwiftyCrypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B759B27F200F351700DDFB10 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +167,7 @@
 				B7B209FA20443B19003BB264 /* SwiftyJWTTestApp */,
 				B7B20A0F20443B1A003BB264 /* SwiftyJWTTestAppTests */,
 				B759B28A200F351700DDFB10 /* Products */,
+				544F90BD2286E8CD005BB3DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -647,7 +659,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -679,7 +694,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

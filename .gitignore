@@ -12,5 +12,6 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-#CocoaPods
-Pods/
+# Carthage
+Carthage/
+Cartfile.resolved
