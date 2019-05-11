@@ -22,14 +22,11 @@
 		B759B2BE200F4D4000DDFB10 /* CompactJSONEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2BD200F4D4000DDFB10 /* CompactJSONEncoderTests.swift */; };
 		B759B2C0200F905E00DDFB10 /* DynamicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2BF200F905E00DDFB10 /* DynamicKey.swift */; };
 		B759B2C1200F905E00DDFB10 /* DynamicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2BF200F905E00DDFB10 /* DynamicKey.swift */; };
-		B759B2CA2010430000DDFB10 /* private.txt in Resources */ = {isa = PBXBuildFile; fileRef = B759B2C82010430000DDFB10 /* private.txt */; };
 		B759B2CB2010430000DDFB10 /* private.txt in Resources */ = {isa = PBXBuildFile; fileRef = B759B2C82010430000DDFB10 /* private.txt */; };
-		B759B2CC2010430000DDFB10 /* public.txt in Resources */ = {isa = PBXBuildFile; fileRef = B759B2C92010430000DDFB10 /* public.txt */; };
 		B759B2CD2010430000DDFB10 /* public.txt in Resources */ = {isa = PBXBuildFile; fileRef = B759B2C92010430000DDFB10 /* public.txt */; };
 		B759B2CF2010701A00DDFB10 /* JWTRSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2CE2010701A00DDFB10 /* JWTRSATests.swift */; };
 		B759B2D520107D5C00DDFB10 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2D420107D5C00DDFB10 /* JWT.swift */; };
 		B759B2D620107D5C00DDFB10 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759B2D420107D5C00DDFB10 /* JWT.swift */; };
-		B7664D9E20513F3F006570D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7664D9D20513F3F006570D4 /* Info.plist */; };
 		B77E61C020468CAA00C4220C /* CompactJSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77E61BF20468CAA00C4220C /* CompactJSONDecoderTests.swift */; };
 		B784054A204F8AB2007B0DB3 /* JWTPayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7840549204F8AB2007B0DB3 /* JWTPayloadTests.swift */; };
 		B7B209FC20443B19003BB264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B209FB20443B19003BB264 /* AppDelegate.swift */; };
@@ -282,7 +279,6 @@
 				B759B284200F351700DDFB10 /* Sources */,
 				B759B285200F351700DDFB10 /* Frameworks */,
 				B759B286200F351700DDFB10 /* Headers */,
-				B759B287200F351700DDFB10 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -401,16 +397,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B759B287200F351700DDFB10 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B759B2CA2010430000DDFB10 /* private.txt in Resources */,
-				B759B2CC2010430000DDFB10 /* public.txt in Resources */,
-				B7664D9E20513F3F006570D4 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B759B290200F351700DDFB10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
